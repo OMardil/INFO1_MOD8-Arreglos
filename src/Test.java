@@ -3,30 +3,25 @@ import java.util.Scanner;
 public class Test{
     public static void main(String[] args){
 
-        Scanner keyboard = new Scanner(System.in);
-        System.out.print("Cuantas materias llevas?: ");
-        int materias = Integer.parseInt(keyboard.nextLine());
-
-        double clases[] = new double[materias];
-        for(int i = 0; i < clases.length; i++){
-            System.out.print("Ingresa tu materia " + (i+1) + ": ");            
-            clases[i] = Double.parseDouble(keyboard.nextLine());
+        int a[] = {1,5,7};
+        System.out.println("Before:");
+        for(int i1: a){
+            System.out.println(i1);
         }
 
-        double acum = 0;
-        for(double calif: clases){
-            acum+= calif;
+        doSomething(a);
+
+        System.out.println("After:");
+        for(int i1: a){
+            System.out.println(i1);
+        }        
+
+    }
+
+    public static void doSomething(int[] arr1){
+        for(int i = 0; i<arr1.length; i++){
+            arr1[i]++;
         }
-
-        double promedio = 0;
-        if (materias > 0){
-            promedio = acum / materias;
-        }
-
-        System.out.println("Tu promedio es: " + promedio);
-
-        keyboard.close();
-
     }
 
 }

@@ -4,6 +4,12 @@
             "type": "java",
             "name": "CodeLens (Launch) - Test",
             "request": "launch",
+            "mainClass": "Test"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Test",
+            "request": "launch",
             "mainClass": "Test",
             "projectName": "INFO1_MOD8-Arreglos_f9d3b727"
         }
